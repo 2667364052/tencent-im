@@ -35,10 +35,11 @@ type (
 )
 
 const (
-	TypePublic   Type = "Public"     // Public（陌生人社交群）
-	TypePrivate  Type = "Private"    // Private（即 Work，好友工作群）
-	TypeChatRoom Type = "ChatRoom"   // ChatRoom（即 Meeting，会议群）
-	TypeLiveRoom Type = "AVChatRoom" // AVChatRoom（直播群）
+	TypePublic    Type = "Public"     // Public（陌生人社交群）
+	TypePrivate   Type = "Private"    // Private（即 Work，好友工作群）
+	TypeChatRoom  Type = "ChatRoom"   // ChatRoom（即 Meeting，会议群）
+	TypeLiveRoom  Type = "AVChatRoom" // AVChatRoom（直播群）
+	TypeCommunity Type = "Community"
 
 	ApplyJoinOptionFreeAccess     ApplyJoinOption = "FreeAccess"     // 自由加入
 	ApplyJoinOptionNeedPermission ApplyJoinOption = "NeedPermission" // 需要验证
@@ -46,6 +47,7 @@ const (
 
 	ShutUpStatusOn  ShutUpStatus = "On"  // 开启
 	ShutUpStatusOff ShutUpStatus = "Off" // 关闭
+
 )
 
 type Group struct {

@@ -358,7 +358,7 @@ func (g *Group) checkTypeArgError() error {
 	}
 
 	switch Type(g.groupType) {
-	case TypePublic, TypePrivate, TypeChatRoom, TypeLiveRoom:
+	case TypePublic, TypePrivate, TypeChatRoom, TypeLiveRoom, TypeCommunity:
 	default:
 		return errInvalidGroupType
 	}
